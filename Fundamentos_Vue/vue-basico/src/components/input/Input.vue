@@ -1,17 +1,18 @@
 <template>
   <div>
-    <label for="">{{label}}</label> <br>
-    <input :type="type" :placeholder="placeHolder">
+    <label :for="id"></label> <br>
+    <input :type="type" :placeholder="placeHolder" :id="id">
   </div>
 </template>
 <script>
   export  default{
     name:"Input",
     props:{
-    label:{type: String, require},
-    placeHolder:{type: String},
-    type: {type: String, default: 'text'}
-  },
+      label:{type: String, require},
+      placeHolder:{type: String},
+      type: {type: String, default: 'text'},
+      id: {type: String, require}
+    },
     data(){
       return{
         

@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <!-- <nav>
-      <router-link to="/">About</router-link> |
-      <router-link to="/login">Home</router-link>
-    </nav> -->
-    <Menu></Menu>
+    <Menu v-if="this.$router.currentRoute.name != 'LoginAplicacao'"></Menu>
     <router-view/>
   </div>
 </template>
@@ -26,5 +22,8 @@ export default {
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
+  }
+  .container{
+    margin-top: 15px;
   }
 </style>

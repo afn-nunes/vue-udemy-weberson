@@ -5,7 +5,7 @@
 </template>
 <script>
 export default{
-  name : 'CadastroDeClientes',
+  name : 'ControleDeClientes',
   data(){
     return{
       mensagem : 'This is an client page'

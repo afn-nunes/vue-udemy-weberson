@@ -2,8 +2,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import DashboardAplicacao from '@/views/DashboardAplicacao';
 import LoginAplicacao from '@/views/LoginAplicacao';
-import CadastroDeClientes from '@/views/CadastroDeClientes';
-import CadastroDeProdutos from '@/views/CadastroDeProdutos';
+import ControleDeClientes from '@/views/ControleDeClientes';
+import ControleDeProdutos from '@/views/ControleDeProdutos';
 const routes = [
   {
     path: '/',
@@ -19,14 +19,14 @@ const routes = [
   },
   {
     path: '/controle-de-clientes',
-    name: 'CadastroDeClientes',
-    component: CadastroDeClientes,
+    name: 'ControleDeClientes',
+    component: ControleDeClientes,
     'title': 'Clientes'
   },
   {
     path: '/controle-de-produtos',
-    name: 'CadastroDeProdutos',
-    component: CadastroDeProdutos,
+    name: 'ControleDeProdutos',
+    component: ControleDeProdutos,
     'title': 'Produtos'
   }
 ]

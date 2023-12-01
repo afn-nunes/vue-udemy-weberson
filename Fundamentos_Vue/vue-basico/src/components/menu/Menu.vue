@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="menu">
     <li><a @click="() => this.$router.push({path: '/'})">Dashboard</a></li>
     <li><a @click="() => this.$router.push({path: '/controle-de-produtos'})">Produtos</a></li>
     <li><a @click="() => this.$router.push({path: '/controle-de-clientes'})">Clientes</a></li>
@@ -26,7 +26,16 @@
     margin-right: 10px;
   }
 
-  li a {
+  ul.menu li a{
+    display: block;
+    color: #FFF;
+    padding: 15px 17px;
+    text-decoration: none;
+    text-align: center;
+    cursor:pointer;
+  }
+
+  ul.menu li a {
     display: block;
     color: #fff;
     padding: 15px 17px;
